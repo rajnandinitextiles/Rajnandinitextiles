@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RajNandini Textiles</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white">
+  <!-- Header -->
+  <header class="fixed w-full z-50 bg-white shadow-md py-2">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <i data-lucide="scissors" class="h-8 w-8 text-red-600 mr-2"></i>
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold text-gray-800">RajNandini</h1>
+            <p class="text-xs md:text-sm text-gray-600">Textiles Since 2002</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-red-600 font-medium">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-red-600 font-medium">About</a>
+          <a href="#products" class="text-gray-700 hover:text-red-600 font-medium">Products</a>
+          <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium">Contact</a>
+        </nav>
+        <button class="md:hidden" onclick="toggleMenu()">
+          <i data-lucide="menu" class="h-6 w-6 text-gray-700"></i>
+        </button>
+      </div>
+      <!-- Mobile Navigation -->
+      <nav id="mobileMenu" class="md:hidden mt-4 pb-4 hidden">
+        <div class="flex flex-col space-y-4">
+          <a href="#home" class="text-gray-700 hover:text-red-600 font-medium py-2">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-red-600 font-medium py-2">About</a>
+          <a href="#products" class="text-gray-700 hover:text-red-600 font-medium py-2">Products</a>
+          <a href="#contact" class="text-gray-700 hover:text-red-600 font-medium py-2">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80'); background-attachment: fixed;">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Premium Quality Textiles Since 2002</h1>
+        <p class="text-xl text-gray-200 mb-8">RajNandini Textiles - Your trusted partner for high-quality embroidery fabrics and textile materials.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#products" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-300 flex items-center justify-center">
+            Explore Products <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+          </a>
+          <a href="#contact" class="bg-transparent hover:bg-white/10 text-white border border-white px-6 py-3 rounded-md font-medium transition-colors duration-300">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About RajNandini Textiles</h2>
+          <div class="space-y-4 text-gray-600">
+            <p>Founded in 2002, RajNandini Textiles has established itself as a premier supplier of high-quality embroidery fabrics and textile materials in India. Based in Surat, Gujarat - the textile hub of India - we combine traditional craftsmanship with modern technology to create exceptional products.</p>
+            <p>For over two decades, we have been serving customers across India and internationally, providing them with the finest embroidery fabrics that blend beauty, durability, and innovation. Our commitment to quality and customer satisfaction has made us a trusted name in the textile industry.</p>
+            <p>At RajNandini Textiles, we take pride in our extensive range of products, from traditional embroidery fabrics to contemporary designs that cater to the evolving needs of the fashion and textile industries. Our fabrics are known for their exquisite craftsmanship, vibrant colors, and superior quality.</p>
+            <p>We source our materials from reliable suppliers and employ skilled artisans who bring years of experience and expertise to every piece of fabric we produce. This ensures that our products meet the highest standards of quality and aesthetics.</p>
+          </div>
+          <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-red-600">20+</h3>
+              <p class="text-gray-600">Years Experience</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-red-600">500+</h3>
+              <p class="text-gray-600">Happy Clients</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-red-600">1000+</h3>
+              <p class="text-gray-600">Products</p>
+            </div>
+            <div class="text-center">
+              <h3 class="text-4xl font-bold text-red-600">10+</h3>
+              <p class="text-gray-600">Countries Served</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-4 -left-4 w-24 h-24 bg-red-100 rounded-lg z-0"></div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-red-100 rounded-lg z-0"></div>
+          <img src="https://images.unsplash.com/photo-1573767291321-c0af2eaf5266?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80" alt="Textile factory" class="rounded-lg shadow-xl relative z-10 w-full h-auto object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <!-- <section id="products" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover our extensive range of high-quality embroidery fabrics and textile materials, crafted with precision and care.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        Product items go here
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> --> -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - RajNandini Textiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover our extensive range of high-quality embroidery fabrics and textile materials, crafted with precision and care.
+          </p>
+        </div>
+        
+        <!-- Search and Filter -->
+        <div class="mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="flex overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
+            <button onclick="setActiveCategory('all')" class="px-4 py-2 rounded-md whitespace-nowrap mr-2 bg-red-600 text-white">All Products</button>
+            <button onclick="setActiveCategory('embroidery')" class="px-4 py-2 rounded-md whitespace-nowrap mr-2 bg-white text-gray-700 hover:bg-gray-100">Embroidery Fabrics</button>
+            <button onclick="setActiveCategory('traditional')" class="px-4 py-2 rounded-md whitespace-nowrap mr-2 bg-white text-gray-700 hover:bg-gray-100">Traditional Textiles</button>
+            <button onclick="setActiveCategory('modern')" class="px-4 py-2 rounded-md whitespace-nowrap mr-2 bg-white text-gray-700 hover:bg-gray-100">Modern Designs</button>
+            <button onclick="setActiveCategory('specialty')" class="px-4 py-2 rounded-md whitespace-nowrap mr-2 bg-white text-gray-700 hover:bg-gray-100">Specialty Fabrics</button>
+          </div>
+          
+          <div class="relative w-full md:w-64">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search products..."
+              oninput="filterProducts()"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            />
+            <svg
+              class="absolute right-3 top-2.5 h-5 w-5 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Product items will be dynamically inserted here -->
+        </div>
+        
+        <!-- Product Inquiry CTA -->
+        <div class="mt-16 bg-red-50 rounded-lg p-8 text-center">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Looking for Custom Fabrics?</h3>
+          <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+            We offer custom embroidery and textile solutions tailored to your specific requirements. Contact us to discuss your project needs.
+          </p>
+          <a 
+            href="#contact" 
+            class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-300"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      // Product data
+      const categories = [
+        { id: 'all', name: 'All Products' },
+        { id: 'embroidery', name: 'Embroidery Fabrics' },
+        { id: 'traditional', name: 'Traditional Textiles' },
+        { id: 'modern', name: 'Modern Designs' },
+        { id: 'specialty', name: 'Specialty Fabrics' }
+      ];
+  
+      const products = [
+        {
+          id: 1,
+          name: 'Floral Embroidery Fabric',
+          category: 'embroidery',
+          image: 'https://images.unsplash.com/photo-1594761051656-153faa4ea454?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80',
+          description: 'Exquisite floral embroidery on premium cotton fabric, perfect for traditional garments and home decor.'
+        },
+        {
+          id: 2,
+          name: 'Zari Work Silk',
+          category: 'traditional',
+          image: 'https://images.unsplash.com/photo-1603251579431-8041402bdeda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          description: 'Luxurious silk fabric with intricate zari work, ideal for sarees and festive wear.'
+        },
+        {
+          id: 3,
+          name: 'Contemporary Pattern Fabric',
+          category: 'modern',
+          image: 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80',
+          description: 'Modern geometric patterns on lightweight fabric, suitable for contemporary fashion designs.'
+        },
+        {
+          id: 4,
+          name: 'Sequin Embellished Fabric',
+          category: 'embroidery',
+          image: 'https://images.unsplash.com/photo-1584184924103-e310d9dc82fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80',
+          description: 'Glamorous fabric with sequin embellishments, perfect for evening wear and special occasions.'
+        },
+        {
+          id: 5,
+          name: 'Banarasi Brocade',
+          category: 'traditional',
+          image: 'https://images.unsplash.com/photo-1605128005752-fd419aa25e81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          description: 'Traditional Banarasi brocade fabric with rich textures and intricate designs.'
+        },
+        {
+          id: 6,
+          name: 'Minimalist Cotton Blend',
+          category: 'modern',
+          image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1072&q=80',
+          description: 'Clean, minimalist design on comfortable cotton blend, ideal for casual and everyday wear.'
+        },
+        {
+          id: 7,
+          name: 'Waterproof Textile',
+          category: 'specialty',
+          image: 'https://images.unsplash.com/photo-1618082996795-43dfa5f4e4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          description: 'Durable waterproof fabric for outdoor applications and specialized clothing.'
+        },
+        {
+          id: 8,
+          name: 'Eco-Friendly Organic Fabric',
+          category: 'specialty',
+          image: 'https://images.unsplash.com/photo-1606513542745-97629752a13b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          description: 'Sustainable and eco-friendly organic fabric, perfect for environmentally conscious designs.'
+        }
+      ];
+  
+      let activeCategory = 'all';
+      let searchTerm = '';
+  
+      // Function to set active category
+      function setActiveCategory(categoryId) {
+        activeCategory = categoryId;
+        filterProducts();
+      }
+  
+      // Function to filter products
+      function filterProducts() {
+        searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const filteredProducts = products.filter(product => {
+          const matchesCategory = activeCategory === 'all' || product.category === activeCategory;
+          const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+                                product.description.toLowerCase().includes(searchTerm);
+          return matchesCategory && matchesSearch;
+        });
+        renderProducts(filteredProducts);
+      }
+  
+      // Function to render products
+      function renderProducts(filteredProducts) {
+        const productsGrid = document.getElementById('productsGrid');
+        productsGrid.innerHTML = '';
+  
+        if (filteredProducts.length > 0) {
+          filteredProducts.forEach(product => {
+            const productCard = `
+              <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div class="h-64 overflow-hidden">
+                  <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">${product.name}</h3>
+                  <p class="text-gray-600 mb-4">${product.description}</p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-sm font-medium px-3 py-1 bg-gray-100 rounded-full text-gray-700">
+                      ${categories.find(cat => cat.id === product.category).name}
+                    </span>
+                    <button class="text-red-600 hover:text-red-700 font-medium">
+                      Inquire
+                    </button>
+                  </div>
+                </div>
+              </div>
+            `;
+            productsGrid.insertAdjacentHTML('beforeend', productCard);
+          });
+        } else {
+          productsGrid.innerHTML = `
+            <div class="col-span-full text-center py-12">
+              <p class="text-gray-600 text-lg">No products found matching your criteria. Please try a different search or category.</p>
+            </div>
+          `;
+        }
+      }
+  
+      // Initial render
+      filterProducts();
+    </script>
+  </body>
+  </html>
+
+  <!-- Contact Section -->
+  <!-- <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Have questions about our products or services? Get in touch with us and our team will be happy to assist you.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Information and Form go here -->
+      <!-- </div> -->
+    <!-- </div>/ -->
+  <!-- </section> --> -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RajNandini Textiles</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-white">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Have questions about our products or services? Get in touch with us and our team will be happy to assist you.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div>
+            <div class="bg-gray-50 p-8 rounded-lg mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <i data-lucide="map-pin" class="h-6 w-6 text-red-600 mr-4 mt-1 flex-shrink-0"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Address</h4>
+                    <p class="text-gray-600">
+                      Om Textile Park, Plot No. 4-11, Parab Valan Rd, KAMREJ, Surat, Gujarat 394325
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <i data-lucide="phone" class="h-6 w-6 text-red-600 mr-4 mt-1 flex-shrink-0"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                    <p class="text-gray-600">+91 9913988321</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <i data-lucide="mail" class="h-6 w-6 text-red-600 mr-4 mt-1 flex-shrink-0"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                    <p class="text-gray-600">rajnandinitex@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <i data-lucide="clock" class="h-6 w-6 text-red-600 mr-4 mt-1 flex-shrink-0"></i>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-1">Business Hours</h4>
+                    <p class="text-gray-600">
+                      Monday - Saturday: 9:00 AM - 6:00 PM<br />
+                      Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="rounded-lg overflow-hidden h-80 shadow-md">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.4980517635!2d72.9010413!3d21.2496799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f3c4e75fd11%3A0x9f3e1939c8a6c25e!2sOm%20Textile%20Park%2C%20Parab%20Valan%20Rd%2C%20KAMREJ%2C%20Surat%2C%20Gujarat%20394325!5e0!3m2!1sen!2sin!4v1652345678901!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border: 0;" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="RajNandini Textiles Location"
+              ></iframe>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+            
+            <div id="formStatus" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-md mb-6">
+              <p>Thank you for your message! We will get back to you shortly.</p>
+            </div>
+            
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label for="name" class="block text-gray-700 font-medium mb-1">Your Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-gray-700 font-medium mb-1">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+              </div>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+                
+                <div>
+                  <label for="subject" class="block text-gray-700 font-medium mb-1">Subject *</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="Product Inquiry">Product Inquiry</option>
+                    <option value="Custom Order">Custom Order</option>
+                    <option value="Wholesale">Wholesale</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 font-medium mb-1">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="5"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+                ></textarea>
+              </div>
+              
+              <button
+                type="submit"
+                class="w-full bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-medium transition-colors duration-300"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      // Function to handle form submission
+      function handleSubmit(event) {
+        event.preventDefault();
+        
+        // Simulate form submission
+        const formStatus = document.getElementById('formStatus');
+        formStatus.classList.remove('hidden');
+        
+        // Reset form
+        document.getElementById('contactForm').reset();
+      }
+  
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+  </html>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-12 pb-8">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">RajNandini Textiles</h3>
+          <p class="text-gray-400 mb-4">Providing premium quality textiles and embroidery fabrics since 2002. Two decades of excellence in the textile industry.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook" class="h-5 w-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram" class="h-5 w-5"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter" class="h-5 w-5"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <div class="space-y-3">
+            <div class="flex items-start">
+              <i data-lucide="map-pin" class="h-5 w-5 text-red-500 mr-2 mt-1 flex-shrink-0"></i>
+              <p class="text-gray-400">Om Textile Park, Plot No. 4-11, Parab Valan Rd, KAMREJ, Surat, Gujarat 394325</p>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="phone" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"></i>
+              <p class="text-gray-400">+91 9913988321</p>
+            </div>
+            <div class="flex items-center">
+              <i data-lucide="mail" class="h-5 w-5 text-red-500 mr-2 flex-shrink-0"></i>
+              <p class="text-gray-400">rajnandinitex@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 RajNandini Textiles. All rights reserved.</p>
+        <p>Developed by Meet Makwana</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    }
+
+    function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>
